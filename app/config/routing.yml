@@ -1,0 +1,15 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+    prefix:   /app
+
+user:
+    resource: "@UserBundle/Controller/"
+    type:     annotation
+    prefix:   /user
+
+im:
+    resource: "@IMBundle/Controller/"
+    type:     annotation
+    prefix:   /im
+

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .message {
+            margin-top: 10px;
+            border-top: 1px dashed #aaa;
+            padding-top: 10px;
+        }
+        .message .body {
+            font-size: 18px;;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Мои сообщения ({{ user.name }})</h1>
+        {% for chat in user.chats %}
+            <div class="chat">
+
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

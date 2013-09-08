@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="chat">
+            {% for message in chat.messages %}
+                <div class="message">
+                    {% if message in user.unseens %}
+                        unseen
+                    {% endif %}
+                    <div class="body">
+                        {{ message.body }}
+                    </div>
+                    <div class="info">
+                        {{ message.author.name }}, {{ message.created|date('d.m.Y') }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
